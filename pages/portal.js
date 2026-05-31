@@ -91,6 +91,8 @@ portalTwo.style.borderRadius = "50%"
 portalTwo.style.backgroundPosition = "center"
 
 const fragment = document.createDocumentFragment();
+fragment.appendChild(portalTwo);
+
 
 
 

@@ -74,8 +74,12 @@ portalForm.addEventListener("submit", function (e) {
             break;
         }
     }
-    if (isFormValid) {
-        window.open("https://github.com/kevmack7323-tech/SBA-316-The-Document-Object-Model/tree/main")
+     if (isFormValid){
+        document.getElementById("pContainer").appendChild(fragment);
+
+        setTimeout(function(){
+            window.open("https://github.com/kevmack7323-tech/SBA-316-The-Document-Object-Model/tree/main")
+        }, 2000);
     }
 });
 
@@ -92,8 +96,6 @@ portalTwo.style.backgroundPosition = "center"
 
 const fragment = document.createDocumentFragment();
 fragment.appendChild(portalTwo);
-
-
 
 
 
